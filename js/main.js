@@ -83,7 +83,7 @@ $(document).ready(function () {
     });
 
     // navbar
-    $(".items-wrapper li").on('click', function () {
+    $(".links li").on('click', function () {
         window.location = $(this).find('a').attr('href');
         $(this).addClass('active-link').siblings().removeClass('active-link');
 
