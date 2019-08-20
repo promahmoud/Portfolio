@@ -754,17 +754,6 @@ ul {
     z-index: 2;
 }
 
-.projects-content .text-content h4 {
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 22px;
-    color: #121212;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #eee;
-}
 
 .projects-content .primary-button a:hover {
     background-color: transparent;
@@ -982,9 +971,20 @@ ul {
     margin-right: -100px;
 }
 
-
+/* ********************************************************* */
+/*
+========================
+---- footer style -----
+========================
+*/
 
 /* ********************************************************* */
+.footer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top:3%;
+}
 /*
 ========================
 ---- Navbar style -----
@@ -1076,7 +1076,7 @@ ul {
     text-decoration: none;
 }
 .items-wrapper li.active{
-    background: rebeccapurple;
+    background:#7811df;
 
 }
 
@@ -1286,5 +1286,3 @@ ul {
         padding-top: 15%;
     }
 }
-
-@media (min-width: 768px) and (max-width:1000) {}
