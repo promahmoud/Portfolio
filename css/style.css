@@ -1068,10 +1068,16 @@ ul {
     line-height: 3;
     background-color: hsla(0, 0%, 0%, .1);
     transition: transform .3s ease, background .2s ease;
+    cursor: pointer;
 }
 
 .circular-menu .menu-item a {
     color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.items-wrapper li.active{
+    background: rebeccapurple;
+
 }
 
 .circular-menu .menu-item:hover {

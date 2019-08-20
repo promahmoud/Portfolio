@@ -17,7 +17,10 @@ var scrollFx = function () {
             panel
                 .eq(i)
                 .find('.panel__content')
-                .addClass('panel__content--active');
+                .addClass('panel__content--active').end()
+
+
+
         } else {
             panel
                 .eq(i)
@@ -49,34 +52,42 @@ doc.on('ready', init);
 
 // 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:20,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-            
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+
             },
-            600:{
-                items:2,
-                nav:true
+            600: {
+                items: 2,
+                nav: true
             },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
             }
         }
-    })
+    });
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': false,
-        'disableScrolling':true,
-         maxWidth: 800,
-         maxHeight: 600,
-    })
+        'disableScrolling': true,
+        maxWidth: 800,
+        maxHeight: 600,
+    });
+
+    // navbar
+    $(".items-wrapper li").on('click', function () {
+        window.location = $(this).find('a').attr('href');
+        $(this).addClass('active').siblings().removeClass('active');
+
+    });
+
 });
