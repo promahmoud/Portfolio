@@ -1075,7 +1075,7 @@ ul {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
-.items-wrapper li.active{
+.items-wrapper li.active-link{
     background:#7811df;
 
 }
@@ -1260,7 +1260,10 @@ ul {
     .other_skills {
         margin-top: 35px
     }
-
+    .owl-theme .owl-dots,
+     .owl-theme .owl-nav {
+        margin-left: -50%;
+    }
     .contact-content .more-info {
         padding: 30px;
         margin-top: 0px;

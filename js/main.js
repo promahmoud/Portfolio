@@ -55,7 +55,7 @@ doc.on('ready', init);
 $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 20,
         responsiveClass: true,
         responsive: {
@@ -71,7 +71,6 @@ $(document).ready(function () {
             1000: {
                 items: 3,
                 nav: true,
-                loop: false
             }
         }
     });
@@ -86,7 +85,7 @@ $(document).ready(function () {
     // navbar
     $(".items-wrapper li").on('click', function () {
         window.location = $(this).find('a').attr('href');
-        $(this).addClass('active').siblings().removeClass('active');
+        $(this).addClass('active-link').siblings().removeClass('active-link');
 
     });
 
